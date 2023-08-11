@@ -1,0 +1,46 @@
+/* Footer.module.css */
+.footer {
+  background-color: #1C1C1C;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: absolute; /* Adicione position absolute */
+  bottom: 0; /* Fixa o footer na parte inferior */
+  width: 100%; /* Ocupa toda a largura da tela */
+  margin-bottom: -4rem;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+.logoText span{
+  color: red;
+}
+
+.copyright {
+  font-size: 0.9rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+}
+
+.socialLink img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s;
+}
+
+.socialLink:hover {
+  opacity: 0.7;
+}

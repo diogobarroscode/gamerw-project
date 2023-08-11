@@ -7,9 +7,17 @@
 }
 
 body {
-  background-color: #181818;
-  max-width: 1903px;
-  margin: 0 auto;
+  //background: radial-gradient(circle at center, #0a192f -150%, #020c1b 150%);
+  background: radial-gradient(circle at center, #0a192f -50%, #020c1b 150%);
+  background-color: #020c1b;
+  //max-width: 1250px;
+  //margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: radial-gradient(circle at center, #0a192f 0%, #020c1b 70%);
+  }
 }
 
 p {
