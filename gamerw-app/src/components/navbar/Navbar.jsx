@@ -9,7 +9,9 @@ const Navbar = () => {
       <ul className={styles.navList}>
         <li className={styles.navItem}><a href="#">Home</a></li>
         <li className={styles.navItem}><a href="#">Games</a></li>
-        <li className={styles.navItem}><a href="#">Sign In</a></li>
+        <li className={styles.navItem}>
+          <button className={styles.signInButton}>Sign In</button>
+        </li>
       </ul>
     </nav>
   )

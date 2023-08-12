@@ -1,0 +1,82 @@
+/* Sidebar.module.css */
+.toggleButton {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggleButton svg {
+  transition: 0.3s;
+}
+.toggleButton svg:hover {
+  stroke: red;
+}
+
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+  z-index: 998;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Inicia a sidebar fora da tela */
+  width: 300px;
+  height: 100vh;
+  background-color: #03142e;
+  transition: left 0.3s;
+  z-index: 999;
+}
+
+.open {
+  left: 0; /* Mostra a sidebar quando aberta */
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closeButton:hover {
+  color: red;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+.logo a{
+  transition: 0.2s;
+}
+.logo a:hover {
+  color: lightgray;
+}
+.logoText {
+  font-size: 1.9rem;
+}
+.logoText span{
+  color: red;
+}
+
+hr {
+ border-color: #03142e;
+ margin: 0.7rem 0.5rem;
+}
