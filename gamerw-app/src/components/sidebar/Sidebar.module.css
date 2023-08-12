@@ -14,7 +14,7 @@
   transition: 0.3s;
 }
 .toggleButton svg:hover {
-  stroke: red;
+  stroke: #c52754;
 }
 
 
@@ -51,10 +51,11 @@
   background: none;
   border: none;
   cursor: pointer;
+  font-weight: 600;
   transition: 0.3s;
 }
 .closeButton:hover {
-  color: red;
+  color: #c52754;
 }
 
 .logo {
@@ -73,7 +74,7 @@
   font-size: 1.9rem;
 }
 .logoText span{
-  color: red;
+  color: #c52754;
 }
 
 hr {
