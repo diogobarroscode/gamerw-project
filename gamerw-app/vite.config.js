@@ -7,14 +7,14 @@ export default defineConfig({
   plugins: [react()],
 })
 
-module.exports = {
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://api.rawg.io',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
-  },
-};
+// module.exports = {
+//   server: {
+//     proxy: {
+//       '/api': {
+//         target: 'https://api.rawg.io',
+//         changeOrigin: true,
+//         rewrite: (path) => path.replace(/^\/api/, ''),
+//       },
+//     },
+//   },
+// };

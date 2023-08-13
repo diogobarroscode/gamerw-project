@@ -1,0 +1,34 @@
+
+.categoryCardCat {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.categoryCardCat:hover .slideImageCat{
+  transform: scale(1.1); /* Aplicar o efeito de zoom-out */
+}
+
+.slideImageCat {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  transition: transform 0.8s ease;
+}
+
+.categoryNameCat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  transition: color 0.8s ease;
+  z-index: 1;
+}
+.categoryCardCat:hover .categoryNameCat {
+  color: #c52754;
+}

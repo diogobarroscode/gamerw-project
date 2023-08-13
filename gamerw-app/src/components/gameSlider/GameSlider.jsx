@@ -20,6 +20,7 @@ export default function GameSlider({ games }) {
         // }}
         pagination={{
           clickable: true,
+          // type: 'progressbar',
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
@@ -35,12 +36,12 @@ export default function GameSlider({ games }) {
   );
 }
 
- GameSlider.propTypes = {
-   games: PropTypes.arrayOf(
-     PropTypes.shape({
-       id: PropTypes.number.isRequired,
-       background_image: PropTypes.string.isRequired,
-       name: PropTypes.string.isRequired,
-     })
-   ).isRequired,
- };
+GameSlider.propTypes = {
+  games: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      background_image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

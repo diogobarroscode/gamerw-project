@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   margin-bottom: -4rem;

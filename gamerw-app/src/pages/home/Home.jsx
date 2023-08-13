@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { getPopularGames } from '../../services/rawgService';
+import { getGameCategories } from '../../services/rawgService';
 import Loading from '../../components/loading/Loading';
 import styles from './Home.module.css';
 import GameSlider from '../../components/gameSlider/GameSlider';
+import GameCategories from '../../components/categoriesSlider/categoriesSlide';
 
 
 // const popularGames = await getPopularGames();
@@ -12,6 +14,7 @@ const Home = () => {
 
   const [loading, setLoading] = useState(true);
   const [popularGames, setPopularGames] = useState([]);
+  const [gameCategories, setGameCategories] = useState([]);
 
   // useEffect(() => {
   //   setTimeout(() => {
@@ -23,7 +26,11 @@ const Home = () => {
     async function fetchPopularGames() {
       try {
         const games = await getPopularGames();
+        const categories = await getGameCategories();
+
+
         setPopularGames(games);
+        setGameCategories(categories);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching popular games:', error);
@@ -34,6 +41,8 @@ const Home = () => {
     fetchPopularGames();
   }, [])
 
+  const currentYear = new Date().getFullYear();
+
   return (
 
     <>
@@ -41,8 +50,11 @@ const Home = () => {
         <Loading />
       ) : (
        <main className={styles.main}>
-         <h2>Mais Populares em 2023</h2>
+         <h2 className={styles.titleGameSlider}>Mais Populares em {currentYear}</h2>
          <GameSlider games={popularGames} />
+
+         <h2 className={styles.titleCategories}>Explorar categorias</h2>
+          <GameCategories gameCategories={gameCategories} />
        </main>
       )}
     </>
