@@ -1,0 +1,54 @@
+/* GameSlider.module.css */
+
+
+/* .containerSlider {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 100px;
+  margin: 0 auto;
+} */
+
+/* .mySwiper {
+  width: 100%; 
+  height: 100%; 
+  border-radius: 15px;
+} */
+
+/* .mySwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .mySwiper img {
+  max-width: 100%;
+  height: auto;
+} */
+
+
+/* NEW */
+
+.containerSlider {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mySwiper {
+  width: 100%;
+  /*height: 70vw;  70% do viewport width (largura da tela) */
+  max-height: 400px; /* Altura máxima */
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:root {
+  --swiper-theme-color: #c52754 !important;
+}

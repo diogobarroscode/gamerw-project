@@ -1,6 +1,9 @@
 .main {
-  max-width: 1255px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem 1rem;
+  padding: 2rem 1rem;
 }
 
+.main h2 {
+  padding-bottom: 0.5rem;
+}
