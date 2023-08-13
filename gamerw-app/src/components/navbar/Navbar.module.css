@@ -58,9 +58,9 @@
 
 .signInButton {
   background-color: transparent;
-  border: 2px solid #c52754; /* Cor da borda */
+  border: 2px solid #c52754;
   padding: 0.5rem 1rem;
-  color: #ffffff; /* Cor do texto */
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 500;
   cursor: pointer;
@@ -69,7 +69,7 @@
 }
 
 .signInButton:hover {
-  background-color: #c52754; /* Cor de fundo ao passar o mouse */
-  color: #fff; /* Cor do texto ao passar o mouse */
-  border-color: #c52754; /* Cor da borda ao passar o mouse */
+  background-color: #c52754;
+  color: #fff;
+  border-color: #c52754;
 }

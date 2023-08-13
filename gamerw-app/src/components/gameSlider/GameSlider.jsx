@@ -1,6 +1,4 @@
-// import React from 'react';
 import PropTypes from 'prop-types';
-// import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -37,31 +35,12 @@ export default function GameSlider({ games }) {
   );
 }
 
-// function GameSlider({ games }) {
-//   return (
-//     <Swiper
-//       spaceBetween={10}
-//       slidesPerView={3} // Número de slides visíveis por vez
-//       navigation // Adicione os botões de navegação
-//     >
-//       {games.map((game) => (
-//         <SwiperSlide key={game.id}>
-//           <img src={game.background_image} alt={game.name} />
-//         </SwiperSlide>
-//       ))}
-//     </Swiper>
-//   );
-// }
-
  GameSlider.propTypes = {
    games: PropTypes.arrayOf(
      PropTypes.shape({
        id: PropTypes.number.isRequired,
        background_image: PropTypes.string.isRequired,
        name: PropTypes.string.isRequired,
-       // Adicione outros tipos de propriedades necessárias
      })
    ).isRequired,
  };
-
-//export default GameSlider

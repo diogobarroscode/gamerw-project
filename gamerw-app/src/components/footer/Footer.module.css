@@ -1,4 +1,4 @@
-/* Footer.module.css */
+
 .footer {
   background-color: #1C1C1C;
   color: white;
@@ -6,9 +6,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  position: absolute; /* Adicione position absolute */
-  bottom: 0; /* Fixa o footer na parte inferior */
-  width: 100%; /* Ocupa toda a largura da tela */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   margin-bottom: -4rem;
 }
 
