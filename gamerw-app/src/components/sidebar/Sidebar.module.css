@@ -1,6 +1,6 @@
 /* Sidebar.module.css */
 .toggleButton {
-  position: fixed;
+  /* position: fixed; */
   top: 1rem;
   left: 1rem;
   z-index: 999;
@@ -24,14 +24,14 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 998;
 }
 
 .sidebar {
   position: fixed;
   top: 0;
-  left: -300px; /* Inicia a sidebar fora da tela */
+  left: -300px;
   width: 300px;
   height: 100vh;
   background-color: #03142e;
@@ -40,7 +40,7 @@
 }
 
 .open {
-  left: 0; /* Mostra a sidebar quando aberta */
+  left: 0;
 }
 
 .closeButton {
