@@ -27,6 +27,7 @@ export default function GameSlider({ games }) {
         className={styles.mySwiper}
       >
         {games.map((game) => (
+          
          <SwiperSlide key={game.id} className={styles.swiperSlide}>
            <img src={game.background_image} alt={game.name} className={styles.slideImage} />
          </SwiperSlide>

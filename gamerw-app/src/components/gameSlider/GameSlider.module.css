@@ -24,3 +24,21 @@
 :root {
   --swiper-theme-color: #c52754 !important;
 }
+
+.game-slide-content {
+  position: relative;
+  display: inline-block;
+}
+
+.buttonReview {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1; /* Coloca o botão na frente */
+}
